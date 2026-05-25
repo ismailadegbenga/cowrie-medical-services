@@ -97,14 +97,16 @@
         }
       };
 </script>
-<script src="https://unpkg.com/pocketbase/dist/pocketbase.umd.js"></script>
-<script>
-    const pb = new PocketBase(window.location.origin)
+<script src="<%=asset('../../node_modules/pocketbase-js-sdk-jsvm/dist/pocketbase.es.mjs')%>"
+<script type="module">
+  import PocketBase from '../../node_modules/pocketbase-js-sdk-jsvm/dist/pocketbase.es.mjs';
+
+    const pb = new PocketBase(window.location.origin);
     console.log({
       pb
-    })
+    });
 </script>
-<script src="../../node_modules/flyonui/flyonui.js"></script>
+<script src="<%=asset('../../node_modules/flyonui/flyonui.js')%>"></script>
 </body>
 
 </html>
