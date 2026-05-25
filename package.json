@@ -1,0 +1,39 @@
+{
+  "name": "pocketpages-starter-auth",
+  "private": true,
+  "version": "0.0.2",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "flyonui": "^2.4.1",
+    "pocketpages": ">=0.22.3",
+    "pocketpages-plugin-auth": ">=0.2.2",
+    "pocketpages-plugin-js-sdk": ">=0.2.0"
+  },
+  "files": [
+    "pb_hooks",
+    "*.md"
+  ],
+  "description": "A starter project for PocketPages with authentication",
+  "author": {
+    "name": "Ben Allfree",
+    "github": "benallfree"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benallfree/pocketpages/tree/main/packages/starters/auth"
+  },
+  "keywords": [
+    "pocketbase",
+    "pockethost",
+    "sqlite",
+    "pocketpages",
+    "starter",
+    "auth"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@iconify-json/tabler": "^1.2.35",
+    "@iconify/tailwind4": "^1.2.3",
+    "tailwindcss": "^4.3.0"
+  }
+}
