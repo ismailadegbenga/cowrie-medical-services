@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cowrie Medical Services</title>
-<link href="<%=asset('/app.css')%>" rel="stylesheet" />
+  
+  <link href="./assets/css/app.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -89,6 +90,14 @@
     </footer>
 </section>
 
+<script src="./assets/js/pocketbase.umd.js">
+</script>
+<script>
+  const pb = new PocketBase(window.location.origin);
+  console.log({
+    pb
+  })
+</script>
 <script>
     document.getElementById("hamburger").onclick = function toggleMenu() {
         const navToggle = document.getElementsByClassName("toggle");
@@ -97,16 +106,7 @@
         }
       };
 </script>
-<script src="<%=asset('../../node_modules/pocketbase-js-sdk-jsvm/dist/pocketbase.es.mjs')%>"
-<script type="module">
-  import PocketBase from '../../node_modules/pocketbase-js-sdk-jsvm/dist/pocketbase.es.mjs';
-
-    const pb = new PocketBase(window.location.origin);
-    console.log({
-      pb
-    });
-</script>
-<script src="<%=asset('../../node_modules/flyonui/flyonui.js')%>"></script>
+<script src="./assets/js/flyonui.js"></script>
 </body>
 
 </html>
