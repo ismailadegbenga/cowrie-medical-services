@@ -12,7 +12,7 @@
   <header>
     <!-- nav bar section -->
     <nav class="flex flex-wrap items-center justify-between p-3 bg-[#e8e8e5]">
-    <div class="text-xl">Bappa Flour mill</div>
+    <div class="text-xl">Cowrie Medical Services</div>
     <div class="flex md:hidden">
         <button id="hamburger">
           <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
@@ -28,12 +28,12 @@
         </a>
         <a href="#gallery" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">Gallery
         </a>
-        <a href="#contactUs" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">Visit Us
+        <a href="#locateUs" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">Locate Us
         </a>
     </div>
 
     <div class="toggle w-full text-end hidden md:flex md:w-auto px-2 py-2 md:rounded">
-        <a href="tel:+123">
+        <a href="tel:+2348064386157">
             <div class="flex justify-end">
                 <div class="flex items-center h-10 w-30 rounded-md bg-[#c8a876] text-white font-medium p-2">
                     <!-- Heroicon name: phone -->
@@ -42,35 +42,17 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                     </svg>
-                    Call now
+                    Call
                 </div>
             </div>
         </a>
     </div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <% if (auth) { %>
-        <li><a href="/account">Account</a></li>
-        <li><a href="/auth/logout">Logout</a></li>
-        <% } else { %>
-        <li><a href="/auth/login">Login</a></li>
-        <li><a href="/auth/register">Register</a></li>
-        <% } %>
-      </ul>
     </nav>
-    <% if(params.__flash) { %>
-    <div>
-      <mark><%= params.__flash %></mark>
-    </div>
-    <% } %>
-    <% if (auth && !auth.verified()) { %>
-    <div>
-      <mark>Account not verified <a href="/auth/verify">Resend Verification Email</a></mark>
-    </div>
-    <% } %>
   </header>
+
+ <div class="py-3 flex items-center text-sm text-stone-800 before:flex-1 before:border-t before:border-stone-200 before:me-6 after:flex-1 after:border-t after:border-stone-200 after:ms-6 dark:text-neutral-200 dark:before:border-neutral-600 dark:after:border-neutral-600">Cowrie Medical Services</div>
+
   <main>
-    <hr />
     <%- slot %>
   </main>
   <!-- footer -->
